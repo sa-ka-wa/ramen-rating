@@ -1,24 +1,24 @@
-const buildings = [
+const ramens = [
   {
     id: 1,
-    name: "Futuristic Villa",
-    architect: "Zaha Hadid Architects",
-    image: "villa.jpg",
+    name: "Shoyu Ramen",
+    restaurant: "Ichiran",
+    image: "shoyu.jpg",
     rating: 5,
-    comment: "Amazing design!",
+    comment: "Delicious!",
   },
   {
     id: 2,
-    name: "Eco Skyscraper",
-    architect: "Norman Foster",
-    image: "eco-skyscraper.jpg",
+    name: "Miso Ramen",
+    restaurant: "Menya",
+    image: "miso.jpg",
     rating: 4,
-    comment: "Sustainable and modern!",
+    comment: "Very flavorful!",
   },
   {
     id: 3,
-    name: "Minimalist House",
-    architect: "Tadao Ando",
-    image: "minimalist-house.jpg",
+    name: "Tonkotsu Ramen",
+    restaurant: "Ramen-ya",
+    image: "tonkotsu.jpg",
   },
 ];
