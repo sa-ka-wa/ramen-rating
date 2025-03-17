@@ -2,6 +2,7 @@ html {
   font-family: poppins;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  height: 100%;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-left: 0%;
+  height: 100%;
 }
 
 button {
@@ -56,6 +58,8 @@ h2 {
   display: grid;
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 2vh;
 }
 .input input {
   width: 250px;
@@ -68,4 +72,38 @@ h2 {
 }
 h3 {
   padding-right: 10px;
+  margin-bottom: 1vh;
+}
+
+/* ============================= */
+/*          image content        */
+/* ============================= */
+.image-content {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 48px;
+  color: #070504ff;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image1 img {
+  width: 600px;
+  height: auto;
+  margin-top: 10px;
+}
+.thumbnail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: auto;
+}
+.thumbnail img {
+  width: 100px;
+  height: auto;
+  margin-top: 10px;
 }
