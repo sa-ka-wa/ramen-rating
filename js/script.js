@@ -22,3 +22,21 @@ const ramens = [
     image: "tonkotsu.jpg",
   },
 ];
+const displayRamen = () => {
+  const ramenList = document.querySelector(".ramen-list");
+  ramenList.inertHTML = "";
+  ramens.forEach((ramen) => {
+    ramenList.innerHTML += `
+      <div class="ramen">
+        <img src="images/${ramen.image}" alt="${ramen.name}">
+        <h2>${ramen.name}</h2>
+        <h3>${ramen.restaurant}</h3>
+        <div class="rating">${
+          ramen.rating ? `${"★".repeat(ramen.rating)}` : "No rating yet"
+        }</div>
+        <p>${ramen.comment ? ramen.comment : ""}</p>
+      </div>
+    `;
+  });
+};
+displayRamen();

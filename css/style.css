@@ -3,6 +3,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -10,10 +11,9 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 100vh;
+  width: 100vw;
   background-color: #f1f1f1;
   gap: 40vh;
-  margin-left: 20vh;
-  margin-right: 10vh;
 }
 /* ============================= */
 /*          main content         */
@@ -45,14 +45,20 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+  position: relative;
 }
 h2 {
   font-size: 30px;
   color: #070504ff;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+  position: relative;
 }
 .input {
   display: grid;
@@ -73,6 +79,8 @@ h2 {
 h3 {
   padding-right: 10px;
   margin-bottom: 1vh;
+  z-index: 1;
+  position: relative;
 }
 
 /* ============================= */
@@ -83,19 +91,30 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+.image1 {
+  background-size: cover;
+  background-position: center;
+  z-index: -10;
+  margin-top: -50vh;
+  margin-right: 20vh;
+}
 h1 {
   font-size: 48px;
   color: #070504ff;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+  position: relative;
 }
-.image1 img {
+/* .image1 img {
   width: 600px;
   height: auto;
   margin-top: 10px;
-}
+} */
 .thumbnail {
   display: flex;
   justify-content: space-around;
