@@ -8,12 +8,14 @@ html {
 
 body {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 100vh;
   width: 100vw;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
   background-color: #f1f1f1;
-  gap: 40vh;
+  gap: 50px;
 }
 /* ============================= */
 /*          main content         */
@@ -95,8 +97,9 @@ h3 {
   background-size: cover;
   background-position: center;
   z-index: -10;
+  width: auto;
+  height: 100%;
   margin-top: -50vh;
-  margin-right: 20vh;
 }
 h1 {
   font-size: 48px;
@@ -120,9 +123,18 @@ h1 {
   justify-content: space-around;
   align-items: center;
   gap: auto;
+  z-index: 1;
+  position: relative;
+  margin-top: -15vh;
 }
 .thumbnail img {
-  width: 100px;
+  width: 200px;
   height: auto;
   margin-top: 10px;
+  box-shadow: 4px 7px 7px 0px;
+  cursor: pointer;
+}
+.thumbnail img:hover {
+  filter: grayscale(1);
+  transform: scale(1.03);
 }
