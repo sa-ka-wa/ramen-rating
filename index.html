@@ -7,43 +7,25 @@
     <title>Ramen-Rating</title>
   </head>
   <body>
-    <!-- ============================= -->
-    <!--          main content         -->
-    <!-- ============================= -->
-
-    <section class="main-content">
-      <div>
-        <h2>RATING</h2>
-        <p>Rating Holder</p>
-
-        <h2>COMMENT</h2>
-        <p>Place Holder Text</p>
-        <button>Add New Entry</button>
-      </div>
-      <div class="input">
-        <h3>Name</br><input type="text" name="name" id="name" /></h3>
-        <h3>
-          Restaurant </br><input type="text" name="restaurant" id="restaurant" />
-        </h3>
-        <h3>image </br><input type="text" name="image" id="image" /></h3>
-        <h3>Rating </br><input type="number" name="rating" id="rating" /></h3>
-        <h3>Comment </br><input type="text" name="comment" id="comment" /></h3>
-        <button>Create</button>
-      </div>
-    </section>
-
+    
     <!-- ============================= -->
     <!--         image content         -->
     <!-- ============================= -->
 
     <section class="image-content">
-      <div>
+      <div id="ramen-details" >
         <h1>RAMEN RATING APP</h1>
-        <div>
+        <div id="ramen-list"></div>
+        <div class="ramen-info">
           <h2>Ramen</h2>
-          <p>Place Holder Text</p>
+          <p id ="ramen-name">Place Holder Text</p>
           <h2>Restaurant</h2>
-          <p>Place holder Text</p>
+          <p id ="ramen-restaurant">Place holder Text</p>
+                  <h2>RATING</h2>
+        <p id ="ramen-rating">Rating Holder</p>
+
+        <h2>COMMENT</h2>
+        <p id ="comment">Place Holder Text</p>
         </div>
       </div>
       <div class="image">
@@ -55,29 +37,32 @@
         </div>
       </div>
       <div>
-        <div id="ramen-list"></div>
       </div>
       <div class="thumbnail">
-        <img
-          src="./image/My favorite ramen at Ichiran Ramen in Kyoto [i ate].jpeg"
-          alt="ramen2"
-          onclick="changeImage(this)"
-        />
-
-        <img
-          src="./image/Ramen.jpeg"
-          alt="ramen3"
-          onclick="changeImage(this)"
-        />
-
-        <img
-          src="./image/Sapporo ramen.jpeg"
-          alt="ramen4"
-          onclick="changeImage(this)"
-        />
       </div>
     </section>
 
-    <script src="./js/script.js"></script>
+    <!-- ============================= -->
+    <!--          main content         -->
+    <!-- ============================= -->
+
+    <form class="main-content">
+      <div class="entry">
+
+        <button type="button" id="add-entry-btn">Add New Entry</button>
+      </div>
+      <div class="input">
+        <h3>Name</br><input type="text" name="name" id="name" /></h3>
+        <h3>
+          Restaurant </br><input type="text" name="restaurant" id="restaurant" />
+        </h3>
+        <h3>image </br><input type="text" name="image" id="image" /></h3>
+        <h3>Rating </br><input type="number" name="rating" id="rating" /></h3>
+        <h3>Comment </br><input type="text" name="comment" id="comment" /></h3>
+        <button type="button" id="create-btn">Create</button>
+      </div>
+    </form>
+
+    <script src="./js/new.js"></script>
   </body>
 </html>

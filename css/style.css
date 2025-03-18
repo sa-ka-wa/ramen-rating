@@ -39,6 +39,10 @@ button {
   background-color: #070504ff;
   cursor: pointer;
 }
+button :active {
+  color: #070504ff;
+  background-color: #e1d7d5ff;
+}
 p {
   font-size: 15px;
   color: white;
